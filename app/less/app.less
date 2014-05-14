@@ -1,0 +1,46 @@
+.treeWrap{
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 5px;
+
+  .tree{
+    background-image: url('/img/trees/spritesheet.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+
+.treeWrap:not(.dead){
+  cursor: pointer;
+
+  .seed{
+    background-image: url('/img/trees/seed.png');
+  }
+
+  .sapling{
+    background-image: url('/img/trees/sapling.png');
+  }
+
+  .treenager{
+    background-image: url('/img/trees/treenager.png');
+  }
+
+  .adult{
+    background-image: url('/img/trees/adult.png');
+  }
+
+  .stump{
+    background-image: url('/img/trees/stump.png');
+  }
+}
+
+.treeWrap.dead{
+  .tree{
+    background-image: url('/img/trees/dead.png');
+  }
+}
